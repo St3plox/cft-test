@@ -6,7 +6,6 @@ CREATE OR REPLACE FUNCTION get_min(
 IS
   res NUMBER := NULL;
 BEGIN
-  -- первый непустой
   IF pVal1 IS NOT NULL THEN
     res := pVal1;
   END IF;
