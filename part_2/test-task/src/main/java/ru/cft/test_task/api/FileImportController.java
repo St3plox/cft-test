@@ -24,7 +24,7 @@ public class FileImportController {
     }
 
     @PostMapping("/process")
-    public ResponseEntity<Void> processFiles() throws IOException {
+    public void processFiles() throws IOException {
         fileImportService.processFiles();
         return ResponseEntity.ok().build();
     }
